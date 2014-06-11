@@ -1,0 +1,45 @@
+.btn {
+    display: inline-block;
+    margin: 0;
+    width: auto;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:active,
+    &.active {
+        outline: 0;
+        background-image: none;
+    }
+    // Disabled buttons - which are not icons
+    &.btn-disabled:not(.btn-icon),
+    &[disabled]:not(.btn-icon),
+    &:disabled:not(.btn-icon) {
+        text-shadow: none;
+    }
+
+    i {
+        padding-right: 50px * 0.5;
+        font-size: 50px;
+        position: relative;
+    }
+
+    &.icon-only {
+        padding: 0 10px;
+
+        i {
+            padding-right: 0;
+        }
+    }
+    // Groups of more buttons
+    + .btn {
+        margin-left: 10px;
+    }
+}
