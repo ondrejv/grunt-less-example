@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     }
   });
 
-  // Load the plugin that provides the "uglify" task.
+  // Load the plugin
   grunt.loadNpmTasks('grunt-contrib-less');
 
   // Default task(s).
